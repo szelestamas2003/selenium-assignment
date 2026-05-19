@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  selenium:
+    image: selenium/standalone-chrome:latest
+    container_name: selenium-docker
+    shm_size: 2gb
+    ports:
+      - "4444:4444"
+      - "7900:7900"
+    environment:
+      - LANG=hu_HU.UTF-8
+      - LC_ALL=hu_HU.UTF-8
+      - SE_VNC_NO_PASSWORD=1
+      - SE_NODE_MAX_SESSIONS=5
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - LANGUAGE=hu_HU:hu
