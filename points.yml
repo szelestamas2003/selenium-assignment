@@ -45,7 +45,7 @@ quality:
     description: "Function and method names describe what they do, test suite reads like a test description"
 
   low_redundancy:            # required for grade 5
-    done: false
+    done: true
     description: "Minimal code duplication, shared logic is extracted into reusable methods"
 
 # ----------------------------------------------------------
@@ -53,23 +53,23 @@ quality:
 # ----------------------------------------------------------
 basic:
   login_form:                # 3 pts | once
-    done: false
+    done: true
     description: "Fill a simple form and submit it (e.g. login with username and password)"
 
   form_with_user:            # 3 pts | once
-    done: false
+    done: true
     description: "Submit a form that requires a registered/logged-in user"
 
   logout:                    # 2 pts | once
-    done: false
+    done: true
     description: "Log out from the application and verify it"
 
   fill_input:                # 1 pt each | repeatable | max 10
-    count: 1
+    count: 8
     description: "Fill an input field (text, radio, checkbox, date, etc.) — each different type counts as one"
 
   send_form:                 # 1 pt each | repeatable | max 10
-    count: 0
+    count: 3
     description: "Submit a form (each distinct form counts as one)"
 
   static_page_test:          # 2 pts | once
@@ -81,7 +81,7 @@ basic:
     description: "Define an array of URLs or page data, iterate over them and verify something on each page (e.g. check title or a specific element on 5 different pages using a loop)"
 
   complex_xpath:             # 1 pt each | repeatable | max 10
-    count: 3
+    count: 10
     description: "Use a complex XPath expression (e.g. //div[@class='content']//a[contains(@href,'profile')])"
 
   textarea:                  # 1 pt | once
@@ -94,19 +94,19 @@ basic:
     link: "https://www.selenium.dev/documentation/webdriver/support_features/select_lists/"
 
   radio_button:              # 1 pt | once
-    done: false
+    done: true
     description: "Select or verify a radio button"
 
   at_least_4_classes:        # 3 pts | once
-    done: false
+    done: true
     description: "Project has at least 4 Java classes"
 
   at_least_6_classes:        # 3 pts | once
-    done: false
+    done: true
     description: "Project has at least 6 Java classes (cumulative with above)"
 
   at_least_8_classes:        # 3 pts | once
-    done: false
+    done: true
     description: "Project has at least 8 Java classes (cumulative with above)"
 
   explicit_wait:             # 3 pts | once
@@ -119,7 +119,7 @@ basic:
     description: "Read and verify the page title using getTitle()"
 
   page_object_pattern:       # 3 pts | once
-    done: false
+    done: true
     description: "Use Page Object pattern with at least 2 page classes"
     link: "https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/"
 
@@ -146,7 +146,7 @@ advanced:
     link: "https://www.selenium.dev/documentation/webdriver/interactions/cookies/"
 
   hover_test:                # 6 pts | once
-    done: false
+    done: true
     description: "Perform a hover (mouse over) action and verify the result"
     link: "https://www.selenium.dev/documentation/webdriver/actions_api/mouse/"
 
@@ -156,17 +156,17 @@ advanced:
     link: "https://www.selenium.dev/documentation/webdriver/actions_api/mouse/"
 
   file_upload:               # 6 pts | once
-    done: false
+    done: true
     description: "Upload a file through a file input and verify it was uploaded"
     link: "https://www.selenium.dev/documentation/webdriver/elements/file_upload/"
 
   history_test:              # 4 pts | once
-    done: false
+    done: true
     description: "Test browser history navigation (e.g. back(), forward())"
     link: "https://www.selenium.dev/documentation/webdriver/interactions/navigation/"
 
   test_dependencies:         # 4 pts | once
-    done: false
+    done: true
     description: "Make a test method depend on another using dependsOnMethods or dependsOnGroups — e.g. a logout test that only runs if login passed"
     link: "https://testng.org/#_test_methods_classes_and_groups"
     
@@ -175,7 +175,7 @@ advanced:
     description: "Verify an e-mail was sent (e.g. registration activation link, password reset)"
 
   random_data:               # 8 pts | once
-    done: false
+    done: true
     description: "Generate random test data (e.g. random username, email) and use it in a test"
 
   download_files:            # 12 pts | once
@@ -183,7 +183,7 @@ advanced:
     description: "Download one or more files to a folder and verify they were saved"
 
   config_file:               # 6 pts | once
-    done: false
+    done: true
     description: "Store test settings in an external file (e.g. .properties, .yml, or .env) and read them at runtime — things like base URL, username, password, browser type. No hardcoded values in your test code"
 
   javascript_executor:       # 4 pts | once
