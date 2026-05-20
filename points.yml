@@ -19,9 +19,9 @@ student:
 # This has no effect on your grade.
 # ----------------------------------------------------------
 ai_usage:
-  used: false
-  tools: ""           # e.g. "Claude, GitHub Copilot"
-  description: ""     # e.g. "Used Claude to generate initial Page Object 
+  used: true
+  tools: "Google Gemini"           # e.g. "Claude, GitHub Copilot"
+  description: "Used Gemini to easily find methods to use and answers if I didn't know how could I do something with Selenium."     # e.g. "Used Claude to generate initial Page Object
                        #  classes, then modified them manually. Used Copilot 
                        #  for autocomplete while writing test methods."
                        
